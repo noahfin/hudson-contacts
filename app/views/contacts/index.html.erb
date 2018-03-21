@@ -1,13 +1,25 @@
 <%= render 'layouts/sidenav' %>
+
+
+
+
+
 <!-- content -->
 <div class=" contacts-outer"><%= render 'layouts/lowernavbar' %>
   <div class="container">
+
     <div class="row main-section">
       <div class="col-md-3"><%= render 'layouts/mainsidenav' %>
       </div>
       <!-- /.col-md-3 -->
       <div class="col-md-9 main-content-dash">
         <h3 class="main-head"> Contacts</h3>
+        <% if @contacts.blank? %>
+             <div class="alert alert-warning" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+              <strong> record not found </strong>
+            </div>
+        <%end %>
         <div class="panel panel-default">
           <table class="table">
             <%= render @contacts %>

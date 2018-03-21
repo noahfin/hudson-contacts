@@ -1,26 +1,15 @@
 <div class="list-group main-side">
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start bg-dark">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Leads</h5>
-      <small class="text-muted badge badge-pill">3 </small>
-    </div>
-  </a>
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Falmily</h5>
-      <small class="text-muted badgebadge-pill">12</small>
-    </div>
-  </a>
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Deals</h5>
-      <small class="text-muted badge  badge-pill">12</small>
-    </div>
-  </a>
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Other</h5>
-      <small class="text-muted badge  badge-pill">12</small>
-    </div>
-  </a>
+   <div class="list-group-item list-group-item-dark">All Contacts in groups <small class="float-right"><i class="ion-android-menu"></i></small></div>
+  <% Group.all.each do |group| %>
+    <%= link_to contacts_path, class: "list-group-item list-group-item-action flex-column align-items-start bg-dark" do %>
+      <h5 class="mb-1 text-light">All Contacts
+        <small class="text-light badge badge-pill float-right"><%= @contacts.count %> </small>
+        </h5>
+      <% end %>
+      <%= link_to  contacts_path(group_id: group.id), class: "list-group-item list-group-item-action flex-column align-items-start bg-dark" do %>
+         <h5 class="mb-1 text-light"><%= group.name %>
+        <small class=" badge badge-pill float-right text-light"><%= group.contacts.count %> </small>
+        </h5>
+    <% end %>
+  <% end %>
 </div>

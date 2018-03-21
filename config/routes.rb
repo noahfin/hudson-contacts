@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'contacts/index'
+
 
 
   get  '/about', to: 'pages#about'
@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   authenticated do
     root :to => 'contacts#index'
+    get 'contacts/index', as: 'contacts'
   end
 
   root to: 'visitors#index'

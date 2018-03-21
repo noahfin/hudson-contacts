@@ -1,0 +1,20 @@
+ * {
+  box-sizing: border-box;
+
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:hover, a:active, a:link, a:visited {
+  text-decoration: none;
+}
+
+.control-label {
+  display: none;
+}
+
+html body{
+  max-width: 100%;
+}

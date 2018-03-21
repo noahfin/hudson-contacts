@@ -1,0 +1,117 @@
+$navbarColor: #323738;
+$backgroundColor:   #252830;
+.navbar-default, .navbar-toggle:focus, .collapsed, button.navbar-toggle {
+  background: $navbarColor !important;
+  border: none;
+  a {
+    color: white !important;
+  }
+}
+
+body {
+ background-color: $backgroundColor;
+}
+
+.bg-inverse {
+  background-color: $navbarColor;
+  border: none;
+}
+
+.navbar-nav a {
+  color: gray !important;
+}
+
+
+.icon-bar {
+  background-color: white !important;
+}
+
+.active a {
+  background: $navbarColor !important;
+  border-bottom: solid 5px white;
+}
+
+.dropdown-toggle, .dropdown-menu {
+  background: $navbarColor !important;
+  border: none;
+}
+
+.dropdown-menu a:hover {
+  color: black !important;
+  background: white !important;
+}
+
+#top-serch {
+  padding: 4px 10px !important;
+}
+
+
+.nav-landing {
+  min-height: 100px;
+}
+
+ .layer {
+    background-color: red rgba(0,0,0,.1);
+     position: relative;
+     top: 0px;
+     left: 0;
+     min-height: 100vh;
+     width: 100%;
+     overflow: hidden;
+     margin-top: 0px !important;
+
+}
+ .landding-page{
+  background:
+    /* top, transparent red, faked with gradient */
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(255, 0, 0, 0.45)
+    ),
+    /* bottom, image */
+    image-url('login.jpg') no-repeat center center fixed;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     background-size: cover;
+     -o-background-size: cover;
+     min-height: 100%;
+     min-height: 100vh;
+      overflow: hidden;
+        position: absolute;
+        top: 0px;
+        min-width: 100%;
+}
+.main-brand  {
+
+  position: absolute !important;
+  left: 37% !important;
+  top: 40% !important;
+}
+
+.creds-sec {
+  position: absolute !important;
+  width: 33.3333333% !important;
+  left:  33.3333333% !important;
+  top: 15%;
+}
+
+@media only screen and (max-width: 767px) {
+   .creds-sec .authform {
+ width: 100vw !important;
+ margin: 0px  !important;
+ padding: 0px  !important;
+ position: relative  !important;
+ left: -27.3333333%  !important;
+
+}
+form.new_user { position: absolute  !important;
+ max-width: 90% !important;
+ right: 33.3333333%  !important;
+ margin-right: 0px !important;
+}
+}
+.login-sec form{
+  max-width: 50%;
+  position: absolute  !important;
+  left: 24%  !important;
+}

@@ -1,0 +1,15 @@
+<%= link_to 'About', page_path('about'), class: 'dropdown-item' %>
+<% if user_signed_in? %>
+<%= link_to 'Edit account', edit_user_registration_path, class: 'dropdown-item' %>
+<%= link_to 'Sign out', destroy_user_session_path, :method=>'delete', class: 'dropdown-item' %>
+<% else %>
+<%= link_to 'Sign in', new_user_session_path, class: 'dropdown-item' %>
+<%= link_to 'Sign up', new_user_registration_path, class: 'dropdown-item' %>
+<%- if devise_mapping.confirmable? && controller_name != 'confirmations' %>   <%= link_to "Didn't get the email?", new_confirmation_path(resource_name), class: 'dropdown-item' %>
+<% end -%></li>
+<% end %>
+<% if user_signed_in? %>
+<%= link_to 'Users', users_path, class: 'dropdown-item' %>
+<% end %>
+
+

@@ -1,4 +1,37 @@
-<div class="authform">
+
+<div class="landding-page">
+  <div class="layer">
+    <!-- Navigation -->
+        <nav class="navbar navbar-toggleable-sm navbar-trans navbar-inverse">
+        <div class="container-fluid">
+          <a href="/" title="hudsonlab" class="float-left navbar-brand font-weight-light"><h7 class="light text-secondary">Hudson Lab</ht></a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggler-1" aria-controls="navbarToggler-1" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+          <div class=" pull-xs-right justify-content-end" >
+            <ul class=" list-inline mt-2 mt-md-0">
+              <li class="list-inline-item  font-weight-light">
+                <a class="text-secondary" href="/users/sign_in"><i class="ion-ios-person-outline"></i> Login <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="list-inline-item font-weight-light ">
+                <a class="font-weight-light text-secondary" href="/users/sign_up"><i class="ion-ios-person-outline"></i> Register</a>
+              </li>
+              <li class="list-inline-item font-weight-light text-secondary">
+                <a class=" text-secondary" href="/about"><i class="ion-ios-settings "></i> Docs</a>
+              </li>
+              <li class="list-inline-item font-weight-light text-secondary">
+                <a class=" text-secondary" href="/users/confirmation/new"><i class="ion-ios-person-outline"></i> Password?</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="creds-sec">
+    <!-- Page Content -->
+<div class="authform wider-from">
   <h3>Edit <%= resource_name.to_s.humanize %></h3>
   <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put, :role => 'form'}) do |f| %>
     <%= devise_error_messages! %>
@@ -38,4 +71,10 @@
 <h3>Cancel Account</h3>
 <p>Unhappy? We'll be sad to see you go.</p>
 <%= button_to "Cancel my account", registration_path(resource_name), :data => { :confirm => "Are you sure?" }, :method => :delete, :class => 'button right' %>
+</div>
+
+
+</div>
+
+  </div>
 </div>

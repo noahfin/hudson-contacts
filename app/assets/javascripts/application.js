@@ -16,3 +16,15 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
+
+
+jquery.jQuery(document).ready(function($) {
+  ('.left').hover(
+  function () {
+    $('#lower-nv-links').attr("style", "display:none");
+  },
+  function () {
+    $('#lower-nv-links').attr("style", "display:block");
+  }
+);
+});

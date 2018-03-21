@@ -1,6 +1,14 @@
 Rails.application.routes.draw do
-  root to: 'visitors#index'
+  get 'contacts/index'
+
+
   get  '/about', to: 'pages#about'
   devise_for :users
   resources :users
+
+  authenticated do
+    root :to => 'contacts#index'
+  end
+
+  root to: 'visitors#index'
 end

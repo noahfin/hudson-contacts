@@ -17,4 +17,57 @@ a:hover, a:active, a:link, a:visited {
 
 html body{
   max-width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.hide {
+  display: none !important;
+
+}
+.show {
+  display: block !important;
+}
+
+.navbar-right {
+  margin-right: 0;
+}
+
+.table tbody>tr>td.middle {
+  vertical-align: middle;
+}
+
+.media {
+  padding: 10px 0;
+}
+
+
+.media-left {
+  padding: 0 20px;
+}
+
+.media-heading {
+  color: #c1432e;
+  margin-bottom: 10px;
+}
+
+.media-body {
+  padding-top: 15px;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+.btn-circle i{
+   font-size: 2rem;
+}
+.btn-circle i .danger{
+  color:  #c1432e !important;
+
 }

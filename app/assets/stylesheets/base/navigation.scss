@@ -115,3 +115,51 @@ form.new_user { position: absolute  !important;
   position: absolute  !important;
   left: 24%  !important;
 }
+
+  td, th {
+    vertical-align: middle !important;
+    }
+.sidenavbar > .left{
+        float:left;
+        height:100vh;
+    }
+
+.left {
+  margin-top: -.3rem;
+        background: #252830;
+        display: inline-block;
+        white-space: nowrap;
+        width: 50px;
+        transition: width 1s;
+        border-right: 1px solid #343a40;
+    }
+
+.right {
+        background: #fff;
+        width: 350px;
+        transition: width 1s;
+        border-style:solid;
+        border-color:#ccc;
+        border-width:1px;
+    }
+
+ .sidenavbar .left:hover {
+        width: 250px;
+    }
+
+.sidenavbar .item:hover {
+        background-color:#ccc;
+        }
+
+.sidenavbar .item .side-icon{
+    font-size:32px !important;
+    vertical-align: middle !important;
+    padding-right: 14px;
+    color: gray !important;
+    }
+
+.sidenavbar  .item {
+        height:50px;
+        overflow:hidden;
+        color:#fff;
+    }

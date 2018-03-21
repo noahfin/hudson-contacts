@@ -8,7 +8,7 @@
 user = CreateAdminService.new.call
 puts 'CREATED ADMIN USER: ' << user.email
 
-
+require 'faker'
 
 Group.destroy_all
 Contact.destroy_all
@@ -40,5 +40,7 @@ number_of_contacts.times do |i|
 
 end
 
-
+Contact.create(contacts)
 p "#{number_of_contacts} created"
+
+ p Faker::Name.name

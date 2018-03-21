@@ -123,7 +123,10 @@ form.new_user { position: absolute  !important;
         float:left;
         height:100vh;
     }
-
+.sidenavbar {
+   width: 50px;
+  position: static;
+}
 .left {
   margin-top: -.3rem;
         background: #252830;
@@ -132,6 +135,8 @@ form.new_user { position: absolute  !important;
         width: 50px;
         transition: width 1s;
         border-right: 1px solid #343a40;
+
+
     }
 
 .right {
@@ -146,9 +151,15 @@ form.new_user { position: absolute  !important;
  .sidenavbar .left:hover {
         width: 250px;
     }
+    .side-links-s {
 
+    }
+    .staic {
+
+    }
 .sidenavbar .item:hover {
         background-color:#ccc;
+
         }
 
 .sidenavbar .item .side-icon{

@@ -10,11 +10,17 @@ ul {
 a:hover, a:active, a:link, a:visited {
   text-decoration: none;
 }
+$border-radius-base: 0px;
 
 .control-label {
   display: none;
 }
-
+.list-group-item:first-child {
+   border-radius: $border-radius-base !important;
+}
+.list-group-item:last-child{
+  border-radius: $border-radius-base !important;
+}
 html body{
   max-width: 100%;
   font-family: 'Roboto', sans-serif;
@@ -70,4 +76,8 @@ html body{
 .btn-circle i .danger{
   color:  #c1432e !important;
 
+}
+.add-c {
+  margin-top: -25px !important;
+  position: relative; top: -1rem;
 }

@@ -1,15 +1,15 @@
 <% if user_signed_in? %>
-  <li class='nav-item'> <%= link_to 'Home', root_path, class: 'nav-link dropdown-item' %></li>
-  <li class='nav-item'><%= link_to 'Users', users_path, class: 'nav-link dropdown-item' %></li>
-  <li class='nav-item'><%= link_to 'Edit account', edit_user_registration_path, class: 'nav-link dropdown-item' %></li>
-  <li class='nav-item'><%= link_to 'Sign out', destroy_user_session_path, :method=>'delete', class: 'nav-link dropdown-item' %></li>
-  <li class='nav-item'> <%= link_to 'About', page_path('about'), class: 'nav-link dropdown-item' %></li>
+  <li class='nav-item'> <%= link_to 'Home', root_path, class: 'nav-link dropdown-item font-weight-light' %></li>
+  <li class='nav-item'><%= link_to 'Users', users_path, class: 'nav-link dropdown-item font-weight-light' %></li>
+  <li class='nav-item'><%= link_to 'Edit account', edit_user_registration_path, class: 'nav-link dropdown-item font-weight-light' %></li>
+  <li class='nav-item'><%= link_to 'Sign out', destroy_user_session_path, :method=>'delete', class: 'nav-link dropdown-item font-weight-light' %></li>
+  <li class='nav-item'> <%= link_to 'About', page_path('about'), class: 'nav-link dropdown-item font-weight-light' %></li>
 
 
 <% else %>
-  <li class='nav-item'><%= link_to 'Sign in', new_user_session_path, class: 'nav-link dropdown-item' %></li>
-  <li class='nav-item'><%= link_to 'Sign up', new_user_registration_path, class: 'nav-link dropdown-item' %></li>
-  <li class='nav-item'> <%- if devise_mapping.confirmable? && controller_name != 'confirmations' %>   <%= link_to "Didn't get the email?", new_confirmation_path(resource_name), class: 'nav-link dropdown-item' %>
+  <li class='nav-item'><%= link_to 'Sign in', new_user_session_path, class: 'nav-link dropdown-item font-weight-light' %></li>
+  <li class='nav-item'><%= link_to 'Sign up', new_user_registration_path, class: 'nav-link dropdown-item font-weight-light' %></li>
+  <li class='nav-item'> <%- if devise_mapping.confirmable? && controller_name != 'confirmations font-weight-light' %>   <%= link_to "Didn't get the email?", new_confirmation_path(resource_name), class: 'nav-link dropdown-item' %>
 <% end %></li>
 <% end %>
 

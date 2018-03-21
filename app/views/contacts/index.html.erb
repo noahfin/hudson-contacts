@@ -1,9 +1,5 @@
 <%= render 'layouts/sidenav' %>
 
-
-
-
-
 <!-- content -->
 <div class=" contacts-outer"><%= render 'layouts/lowernavbar' %>
   <div class="container">
@@ -27,35 +23,7 @@
             </table>
                 </div>
                 <div class="text-center">
-                  <nav class="pag-sec">
-                    <ul class="pagination  class=" text-secondary"">
-                      <li  class=" text-secondary">
-                        <a href="#"  class=" text-secondary" aria-label="Previous">
-                          <span aria-hidden="true">&laquo;</span>
-                        </a>
-                      </li>
-                      <li class="active text-secondary">
-                        <a href="#">1</a>
-                      </li>
-                      <li  class=" text-secondary">
-                        <a  class=" text-secondary" href="#">2</a>
-                      </li>
-                      <li  class=" text-secondary">
-                        <a  class=" text-secondary" href="#">3</a>
-                      </li>
-                      <li  class=" text-secondary">
-                        <a  class=" text-secondary" href="#">4</a>
-                      </li>
-                      <li  class=" text-secondary">
-                        <a  class=" text-secondary" href="#">5</a>
-                      </li>
-                      <li  class=" text-secondary">
-                        <a href="#" class=" text-secondary" aria-label="Next">
-                          <span aria-hidden="true">&raquo;</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </nav>
+                  <%= paginate @contacts%>
                 </div>
               </div>
             </div>

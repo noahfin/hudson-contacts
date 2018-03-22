@@ -10,12 +10,10 @@
       <div class="col-md-9 main-content-dash">
        <span><h3 class="main-head"> Contacts</h3>
 
-
-                <a href="form.html" class="btn btn-outline-success add-c float-right">
-                  <i class="ion-android-add"></i>
-                  Add Contact
-                </a>
-
+        <%= link_to new_contact_path, class: "btn btn-outline-success add-c float-right" do %>
+          <i class="ion-android-add"></i>
+           Add Contact
+         <%end %>
         </span>
         <% if @contacts.blank? %>
              <div class="alert alert-warning" role="alert">

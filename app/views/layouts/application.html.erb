@@ -18,7 +18,7 @@
         <%= render 'layouts/navigation' %>
       </header>
     <%end%>
-    <%= render 'layouts/messages' %>
+    <%= render 'layouts/messages' if !flash.empty? %>
     <%= yield %>
   </body>
 </html>

@@ -1,44 +1,12 @@
 // import the CSS framework
 // Do not use *= require in Sass or your other stylesheets will not be able to access the Bootstrap mixins and variables.
 @import "bootstrap";
-@import "base/jasny-bootstrap.min.css";
+
 @import "base/navigation.scss";
 @import "base/default.scss";
-@import "partials/home_page.scss";
+
 @import "responsive/mobile.scss";
-@import "partials/contacts.css.scss";
-jasny-bootstrap.min
-.active {
-  background-color: #343a40  !important;
-   border: none !important;
-}
-.main-side {
-  border: none !important;
-}
-#lower-n {
-  box-shadow: none !important;
-}
-.main-sec {
-  position: relative !important;
-  top: 20px;
-}
-.contacts-outer {
-  margin-top: 10px;
-}
-.pag-sec {
-  max-width: 30%;
-  margin: 0 auto;
-  text-align: center;
-}
-.pag-sec li {
-  padding: 6px;
-}
-.pag-sec li > .active{
-background-color: gray !important;
-}
-.main-section {
-  margin-top: 5%;
-}
+
 // make all images responsive by default
 img {
   @extend .img-fluid;

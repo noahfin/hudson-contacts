@@ -1,6 +1,6 @@
 <%= render 'layouts/sidenav' %>
 <!-- content -->
-<div class=" contacts-outer"><%= render 'layouts/lowernavbar' %>
+<div class=" contacts-outer">
   <div class="container">
 
     <div class="row main-section">
@@ -10,9 +10,9 @@
       <div class="col-md-9 main-content-dash">
        <span><h3 class="main-head"> Contacts</h3>
 
-        <%= link_to new_contact_path, class: "btn btn-outline-success add-c float-right" do %>
+        <%= link_to new_contact_path, class: "btn add-c float-right" do %>
           <i class="ion-android-add"></i>
-           Add Contact
+          add contact
          <%end %>
         </span>
         <% if @contacts.blank? %>

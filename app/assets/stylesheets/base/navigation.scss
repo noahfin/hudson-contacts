@@ -1,50 +1,5 @@
 $navbarColor: #323738;
 $backgroundColor:   #252830;
-.navbar-default, .navbar-toggle:focus, .collapsed, button.navbar-toggle {
-  background: $navbarColor !important;
-  border: none;
-  a {
-    color: white !important;
-  }
-}
-
-body {
- background-color: $backgroundColor;
-}
-
-.bg-inverse {
-  background-color: $navbarColor;
-  border: none;
-}
-
-// .navbar-nav a {
-//   color: #37474f !important;
-// }
-
-
-.icon-bar {
-  background-color: white !important;
-}
-
-.active a {
-  background: $navbarColor !important;
-  border-bottom: solid 5px white;
-}
-
-.dropdown-toggle, .dropdown-menu {
-  background: $navbarColor !important;
-  border: none;
-  height: auto !important;
-}
-
-.dropdown-menu a:hover {
-  color: black !important;
-  background: white !important;
-}
-
-#top-serch {
-  padding: 4px 10px !important;
-}
 
 
 .nav-landing {

@@ -1,2 +1,14 @@
 <%# add navigation links to this file %>
 <li class='nav-item'><%= link_to 'About', page_path('about'), class: 'nav-link' %></li>
+
+
+    <li class="nav-item dropdown pull-right">
+            <a class="nav-link dropdown-toggle mr-3 mr-lg-0" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="ion-android-menu light-text"></i>
+
+            </a>
+            <div class="dropdown-menu dropdown-menu-right   " aria-labelledby="navbarDropdownMenuLink">
+              <ul> <li  class='nav-item'>  <a href="/" title="home" class="ml-3 nav-link dropdown-item">Home</a></li>
+               <%= render 'layouts/dropdown' %></ul>
+            </div>
+        </li>

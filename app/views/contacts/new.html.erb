@@ -1,8 +1,9 @@
  <%= render 'layouts/sidenav' %>
 <!-- content -->
-<div class=" contacts-outer"><%= render 'layouts/lowernavbar' %>
+<%= render 'layouts/lowernavbar' %>
+<div class=" contacts-outer">
 
-  <div class="container mt-4">
+  <div class="container">
     <div class="row">
 
 
@@ -10,48 +11,48 @@
         <%= render 'layouts/mainsidenav' %>
     </div>
       <div class="col-md-9">
-          <div class="panel panel-default form-panel">
+          <div class="panel panel-default special-color form-panel">
             <div class="panel-heading ml-3 mb-2">
               <strong>Add Contact</strong>
               <hr>
             </div>
-            <div class="panel-body">
+            <div class="panel-body special-color">
               <div class="form-horizontal">
                 <form class="">
                 <div class="row">
                   <div class="col-md-6 no-gutters mr-1 pr-1">
                     <div class="form-group">
-                      <label for="name" class="control-label col-md-3">Name</label>
+                      <label for="name" class="control-label col-md-3 white-text">Name</label>
                       <div class="col-md-12">
-                        <input type="text" name="name" id="name" class="form-control">
+                        <input type="text" name="name" id="name" class="form-control rounded-0">
                       </div>
                     </div>
 
                     <div class="form-group">
-                      <label for="company" class="control-label col-md-3">Company</label>
+                      <label for="company" class="control-label col-md-3 white-text">Company</label>
                       <div class="col-md-12">
-                        <input type="text" name="company" id="company" class="form-control">
+                        <input type="text" name="company" id="company" class="form-control rounded-0">
                       </div>
                     </div>
 
                     <div class="form-group">
-                      <label for="email" class="control-label col-md-3">Email</label>
+                      <label for="email" class="control-label col-md-3 white-text">Email</label>
                       <div class="col-md-12">
-                        <input type="text" name="email" id="email" class="form-control">
+                        <input type="text" name="email" id="email" class="form-control rounded-0">
                       </div>
                     </div>
 
                     <div class="form-group">
-                      <label for="phone" class="control-label col-md-3">Phone</label>
+                      <label for="phone" class="control-label col-md-3 white-text">Phone</label>
                       <div class="col-md-12">
-                        <input type="text" name="phone" id="phone" class="form-control">
+                        <input type="text" name="phone" id="phone" class="form-control rounded-0">
                       </div>
                     </div>
 
                     <div class="form-group">
-                      <label for="name" class="control-label col-md-3">Address</label>
+                      <label for="name" class="control-label col-md-3 white-text">Address</label>
                       <div class="col-md-12">
-                        <textarea name="address" id="address" rows="3" class="form-control"></textarea>
+                        <textarea name="address" id="address" rows="3" class="form-control rounded-0"></textarea>
                       </div>
                     </div>
 
@@ -77,8 +78,8 @@
 
                       <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"></div>
                       <div class="text-center">
-                        <span class="btn btn-dark btn-file"><span class="fileinput-new">Choose Photo</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
-                        <a href="#" class="btn btn-danger fileinput-exists" data-dismiss="fileinput">Remove</a>
+                        <span class="btn default-color-dark btn-file rounded-0"><span class="fileinput-new">Choose Photo</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+                        <a href="#" class="btn btn-danger fileinput-exists rounded-0" data-dismiss="fileinput">Remove</a>
                       </div>
                     </div>
                      </div>
@@ -89,7 +90,7 @@
                         <div class="pt-3">
 
 
-                        <select name="group" id="group" class="form-control">
+                        <select name="group" id="group" class="form-control rounded-0">
                           <option value="">Select group</option>
                           <option value="1">Family</option>
                           <option value="2">Friend</option>
@@ -100,19 +101,30 @@
                        <div class="col-md-12">
                        <div class="row">
                       <div class="col-md-12 mt-4  pr-0">
-                        <a href="#" id="add-group-btn" class="btn mt-4  btn-outline-dark mt-2 btn-block">+ Group</a>
+                        <a href="#" id="add-group-btn" class="btn mt-4  btn bg-dark mt-2 btn-block rounded-0">+ Group</a>
                       </div>
                         <div class="col-md-12 mt-4 pr-0" >
-                          <input type="text" name="new_group" id="new_group" class="form-control  " placeholder="Type group name">
+                          <div class="input-group mb-3">
+                          <input type="text" name="new_group" id="new_group" class="form-control rounded-0  " placeholder="Type group name">
+                          <div class="input-group-append">
+                            <span class="input-group-text rounded-0 bg-dark border-0" id="basic-addon2 "><i class="ion-android-done white-text "></i></span>
+                          </div>
+                        </div>
                       </div>
 
                          <div class="panel-footer">
               <div class="row">
                 <div class="col-md-12">
                   <div class="row">
-                    <div class=" col-md-12 ml-3  mt-4">
-                      <button type="submit" class="btn  btn-outline-success ">Save New Contact</button>
-                      <a href="#" class="btn btn-secondary ">Cancel Add Contact</a>
+                    <div class=" col-md-18 ml-4 mr-0  mt-4">
+                      <button type="submit" class="btn default-color-dark rounded-0">Save New Contact</button>
+
+
+                      </div>
+                      <div class="col-md-4 mt-4 ml-0 mr-0">
+                           <a href="#" class="btn  btn-danger  ml-0  deep-orange-text rounded-0">Cancel</a>
+                      </div>
+
                     </div>
                   </div>
                 </div>

@@ -1,9 +1,10 @@
 // import the CSS framework
 // Do not use *= require in Sass or your other stylesheets will not be able to access the Bootstrap mixins and variables.
-@import "bootstrap";
+// @import "bootstrap";
 
 @import "base/navigation.scss";
 @import "base/default.scss";
+@import "base/example-pages.scss";
 
 @import "responsive/mobile.scss";
 
@@ -150,4 +151,17 @@ background-color: transparent !important;
   left: 20% !important;
 }
 
+.f-right {
+  position: absolute !important;
+  right: 9px !important;
+  top: 1.6rem !important;
+}
+.i-right {
+    position: relative !important;
+  left: 4.5rem !important;
 
+}
+body, .main-panel {
+  background: #2E2E2E !important;
+  color: white !important;
+}

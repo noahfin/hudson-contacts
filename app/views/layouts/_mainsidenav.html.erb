@@ -1,16 +1,29 @@
-<div class="list-group main-side" id="mainside">
-   <div class="list-group-item special-color black-text">All Contacts and groups <small class="float-right"><i class="ion-android-menu"></i></small></div>
-       <%= link_to contacts_path, class: "list-group-item list-group-item-action flex-column align-items-start bg-dark" do %>
-      <h5 class="mb-1 text-light">All Contacts
-        <small class="text-light badge badge-pill float-right"><%= @contacts.count %> </small>
-        </h5>
+<div class="list-group main-side" >
+<div class="card card-nav-tabs" ">
+  <div class="card-header card-header-danger">
+    Contacts
+  </div>
+
+   <div class="list-group-item special-color list-group-flush black-text  mr-0 pr-2">All Contacts and groups <small class=" i-right"><i class="ion-android-menu"></i></small></div>
+       <%= link_to contacts_path, class: "list-group-item list-group-item-action flex-column align-items-start bg-dark mr-0 pr-0" do %>
+      <ul class="list-inline mr-0 pr-0">
+         <li class="list-inline-item mr-0 pr-0"><h5 class="mb-1 text-light mr-0 pr-0">All Contacts</h5></li>
+         <li class="list-inline-item mr-0 pr-0"><small class="text-light badge badge-pill p-0 f-right mr-0 pr-0"><%= @contacts.count %> </small></li>
+      </ul>
       <% end %>
       <% Group.all.each do |group| %>
       <% active = params[:group_id].to_i == group.id  ? 'current-link' : 'bg-dark' %>
-      <%= link_to  contacts_path(group_id: group.id), class: "list-group-item list-group-item-action flex-column align-items-start #{active} " do %>
-         <h5 class="mb-1 text-light"><%= group.name %>
-        <small class=" badge badge-pill float-right text-light"><%= group.contacts.count %> </small>
-        </h5>
+      <%= link_to  contacts_path(group_id: group.id), class: "list-group-item list-group-item-action flex-column align-items-start bg-dark mr-0 pr-0 #{active} " do %>
+       <ul class="list-inline mr-0 pr-0">
+         <li class="list-inline-item mr-0 pr-0"><h5 class="mb-1 text-light mr-0 pr-0"><%= group.name %></h5></li>
+         <li class="list-inline-item mr-0 pr-0"><small class="text-light badge badge-pill p-0 f-right mr-0 pr-0"><%= group.contacts.count %>  </small></li>
+      </ul>
     <% end %>
   <% end %>
 </div>
+
+
+</div>
+
+
+

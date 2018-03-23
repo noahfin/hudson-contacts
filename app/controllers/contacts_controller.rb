@@ -5,15 +5,19 @@ class ContactsController < ApplicationController
 
 
   def new
+    @contact = Contact.new
     contact_groups
   end
 
   def create
+    # params[:group_id] = params[:group]['group_id']
+
     @contact =Contact.new(contact_params)
     if @contact.save
       flash[:success] = "contact was successfully created."
       redirect_to contacts_path
     else
+      contact_groups
       render 'new'
     end
   end
@@ -23,7 +27,7 @@ private
 
 
 def contact_params
-  params.require(:contact).permit(:name, :email, :company, :address, :phone, :cell, :group_id )
+  params.require(:contact).permit(:name, :email, :company, :address, :phone, :group_id)
 
 end
 
